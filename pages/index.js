@@ -18,7 +18,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          ARTŪR ĶURBI!!! <a href="https://nextjs.org">KUR CV?!?!</a>
+          <strong>ARTŪR ĶURBI!!!</strong>{" "}
+          <a href="https://nextjs.org">KUR CV?!?!</a>
         </h1>
 
         <div style={{ backgroundColor: "red", width: "100px", height: "30px" }}>
