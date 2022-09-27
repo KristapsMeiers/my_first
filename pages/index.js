@@ -23,7 +23,10 @@ export default function Home() {
         </h1>
 
         <div style={{ backgroundColor: "red", width: "100px", height: "30px" }}>
-          <button onClick={handleClick}> NOSPIED MANI, ARTŪR! </button>
+          <button onClick={handleClick}>
+            {" "}
+            <strong>NOSPIED MANI, ARTŪR!</strong>{" "}
+          </button>
         </div>
       </main>
 
