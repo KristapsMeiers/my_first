@@ -1,8 +1,12 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Head from "next/head"
+import Image from "next/image"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
+  const handleClick = () => {
+    alert("YO LOE")
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Prieks redzet! <a href="https://nextjs.org">Kristaps Meiers4!</a>
+          Prieks redzet! <a href="https://nextjs.org">Kristaps Meiers?!</a>
         </h1>
 
         <p className={styles.description}>
@@ -22,7 +26,11 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <button onClick={() => alert("YO LOE")}> click me </button>
+        <div
+          style={{ backgroundColor: "red", width: "150px", height: "150px" }}
+        >
+          <button onClick={handleClick}> click me </button>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -68,5 +76,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  );
+  )
 }
